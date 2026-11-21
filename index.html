@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Raja Ampat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>Jelajah Raja Ampat</h2>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h3>Jelajahi</h3>
+        <a href="#home">Beranda</a>
+        <a href="#wisata">Wisata</a>
+        <a href="#kuliner">Kuliner</a>
+        <a href="#budaya">Budaya</a>
+        <a href="#pemesanan">Pemesanan</a>
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main class="content">
+
+        <!-- BERANDA -->
+        <section id="home" class="hero">
+            <p class="subtitle">SELAMAT DATANG</p>
+            <h1>Jelajahi Pesona Raja Ampat</h1>
+            <p>
+                Kenali keindahan alam, kuliner, dan budaya khas
+                Kabupaten Raja Ampat.
+            </p>
+            <a href="#wisata" class="button">Mulai Jelajah →</a>
+        </section>
+
+        <!-- WISATA -->
+        <section id="wisata" class="section">
+            <p class="subtitle">DESTINASI</p>
+            <h2>Wisata Raja Ampat</h2>
+            <p class="description">
+                Berbagai destinasi alam yang memukau dan bisa kamu kunjungi
+                di Kabupaten Raja Ampat.
+            </p>
+
+            <div class="card-container">
+                <div class="card">
+                    <span class="badge">Favorit</span>
+                    <img src="piaynemo.jpg" alt="Piaynemo">
+                    <div class="card-info">
+                        <h3>Piaynemo</h3>
+                        <p>Gugusan pulau karst dengan pemandangan laut biru yang menjadi ikon Raja Ampat.</p>
+                        <button class="detail-button" onclick="lihatDetail('Piaynemo')">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="pulau wayag.jpg" alt="Pulau Wayag">
+                    <div class="card-info">
+                        <h3>Pulau Wayag</h3>
+                        <p>Kawasan kepulauan dengan bukit-bukit karst dan panorama alam yang menakjubkan.</p>
+                        <button class="detail-button" onclick="lihatDetail('Pulau Wayag')">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="pasir timbul.jpg" alt="Pasir Timbul">
+                    <div class="card-info">
+                        <h3>Pasir Timbul</h3>
+                        <p>Hamparan pasir putih yang tampak saat air laut surut dan dikelilingi perairan jernih.</p>
+                        <button class="detail-button" onclick="lihatDetail('Pasir Timbul')">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KULINER -->
+        <section id="kuliner" class="section">
+            <p class="subtitle">MAKANAN KHAS</p>
+            <h2>Kuliner Raja Ampat</h2>
+            <p class="description">
+                Jangan lupa mencicipi berbagai makanan khas Raja Ampat.
+            </p>
+
+            <div class="card-container">
+                <div class="card">
+                    <span class="badge">Khas</span>
+                    <img src="papeda.jpg" alt="Papeda Ikan Kuah Kuning">
+                    <div class="card-info">
+                        <h3>Papeda Ikan Kuah Kuning</h3>
+                        <p>Papeda berbahan sagu yang disajikan bersama ikan dan kuah kuning berbumbu.</p>
+                        <button class="detail-button" onclick="lihatDetail('Papeda Ikan Kuah Kuning')">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ikan bakar.jpg" alt="Ikan Bakar">
+                    <div class="card-info">
+                        <h3>Ikan Bakar</h3>
+                        <p>Hidangan ikan segar yang dibakar dan biasa dinikmati dengan sambal serta makanan pendamping.</p>
+                        <button class="detail-button" onclick="lihatDetail('Ikan Bakar')">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="sagu.jpg" alt="Sagu Lempeng">
+                    <div class="card-info">
+                        <h3>Sagu Lempeng</h3>
+                        <p>Olahan sagu berbentuk lempeng yang dikenal sebagai salah satu makanan tradisional Papua.</p>
+                        <button class="detail-button" onclick="lihatDetail('Sagu Lempeng')">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUDAYA -->
+        <section id="budaya" class="section">
+            <p class="subtitle">KEBUDAYAAN</p>
+            <h2>Budaya Raja Ampat</h2>
+            <p class="description">
+                Mengenal kekayaan budaya dan tradisi masyarakat Raja Ampat.
+            </p>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="tari wor.jpg" alt="Tari Wor">
+                    <div class="card-info">
+                        <h3>Tari Wor</h3>
+                        <p>Tarian tradisional masyarakat Biak yang dikenal dalam berbagai kegiatan adat dan budaya Papua.</p>
+                        <button class="detail-button" onclick="lihatDetail('Tari Wor')">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="suling.jpg" alt="Suling Tambur">
+                    <div class="card-info">
+                        <h3>Suling Tambur</h3>
+                        <p>Kesenian musik tradisional Papua yang memadukan bunyi suling dan alat musik tambur.</p>
+                        <button class="detail-button" onclick="lihatDetail('Suling Tambur')">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="noken.jpg" alt="Noken">
+                    <div class="card-info">
+                        <h3>Noken</h3>
+                        <p>Kerajinan tas tradisional Papua yang dibuat dengan teknik anyaman atau rajutan.</p>
+                        <button class="detail-button" onclick="lihatDetail('Noken')">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORM PEMESANAN -->
+        <section id="pemesanan" class="section">
+            <p class="subtitle">RENCANAKAN KUNJUNGANMU</p>
+            <h2>Formulir Pemesanan Kunjungan</h2>
+            <p class="description">
+                Isi formulir berikut untuk merencanakan kunjunganmu.
+            </p>
+
+            <form id="formPemesanan" class="booking-form">
+
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama"
+                       placeholder="Masukkan nama lengkap">
+
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email"
+                       placeholder="contoh@email.com">
+
+                <label for="destinasi">Destinasi Pilihan</label>
+                <select id="destinasi">
+                    <option value="">-- Pilih Destinasi --</option>
+                    <option value="Piaynemo">Piaynemo</option>
+                    <option value="Pulau Wayag">Pulau Wayag</option>
+                    <option value="Pasir Timbul">Pasir Timbul</option>
+                    <option value="Papeda Ikan Kuah Kuning">Papeda Ikan Kuah Kuning</option>
+                    <option value="Ikan Bakar">Ikan Bakar</option>
+                    <option value="Sagu Lempeng">Sagu Lempeng</option>
+                </select>
+
+                <label for="tanggal">Tanggal Kunjungan</label>
+                <input type="date" id="tanggal">
+
+                <label for="jumlah">Jumlah Pengunjung</label>
+                <input type="number" id="jumlah"
+                       min="1" placeholder="Masukkan jumlah pengunjung">
+
+                <label for="pesan">Catatan Tambahan</label>
+                <textarea id="pesan" rows="4"
+                    placeholder="Tuliskan catatan jika ada"></textarea>
+
+                <button type="submit" class="submit-button">
+                    Kirim Pemesanan
+                </button>
+
+            </form>
+
+            <div id="hasilPemesanan" class="hasil-pemesanan"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Jelajah Raja Ampat © 2026</p>
+        <p>Mengenal Raja Ampat, Menjelajahi Keindahannya.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
